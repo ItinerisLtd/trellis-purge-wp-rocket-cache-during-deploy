@@ -1,0 +1,12 @@
+---
+- name: Template wp-rocket-clean.php
+  template:
+    src: wp-rocket-clean.php.j2
+    dest: "{{ deploy_helper.shared_path }}/wp-rocket-clean.php"
+
+- name: Purge WP Rocket cache
+  command: wp eval-file "{{ deploy_helper.shared_path }}/wp-rocket-clean.php"
+  args:
+    chdir: "{{ deploy_helper.new_release_path }}"
+  changed_when: false
+  failed_when: false

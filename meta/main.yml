@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Itineris Limited
+  description: Purge WP Rocket cache when Trellis deploys Bedrock
+  company: Itineris Limited
+  license: MIT
+  min_ansible_version: 2.6
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+  galaxy_tags:
+    - trellis
+    - wordpress
+    - kinsta
+    - cache
+dependencies: []

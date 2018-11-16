@@ -1,0 +1,4 @@
+---
+- hosts: all
+  roles:
+    - ../../trellis-purge-wp-rocket-cache-during-deploy
