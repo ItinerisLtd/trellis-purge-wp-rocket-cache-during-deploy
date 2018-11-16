@@ -3,7 +3,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/ItinerisLtd/trellis-purge-wp-rocket-cache-during-deploy.svg)](https://github.com/ItinerisLtd/trellis-purge-wp-rocket-cache-during-deploy/tags)
 [![license](https://img.shields.io/github/license/ItinerisLtd/trellis-purge-wp-rocket-cache-during-deploy.svg)](https://github.com/ItinerisLtd/trellis-purge-wp-rocket-cache-during-deploy/blob/master/LICENSE)
 
-Purge WP Rocket cache when [Trellis](https://github.com/roots/trellis) deploys [Bedrock](https://github.com/roots/bedrock).
+Purge [WP Rocket](https://wp-rocket.me/) cache when [Trellis](https://github.com/roots/trellis) deploys [Bedrock](https://github.com/roots/bedrock).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -14,8 +14,10 @@ Purge WP Rocket cache when [Trellis](https://github.com/roots/trellis) deploys [
 - [Role Variables](#role-variables)
 - [Usage](#usage)
 - [FAQs](#faqs)
-  - [How do you purge Kinsta cache?](#how-do-you-purge-kinsta-cache)
-- [See Also](#see-also)
+  - [Does it trigger cache preload after purge?](#does-it-trigger-cache-preload-after-purge)
+  - [Can I use it together with `trellis-purge-kinsta-cache-during-deploy`?](#can-i-use-it-together-with-trellis-purge-kinsta-cache-during-deploy)
+  - [It looks awesome. Where can I find some more goodies like this?](#it-looks-awesome-where-can-i-find-some-more-goodies-like-this)
+  - [This package isn't on wp.org. Where can I give a ⭐️⭐️⭐️⭐️⭐️ review?](#this-package-isnt-on-wporg-where-can-i-give-a-%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F-review)
 - [Testing](#testing)
   - [Syntax Check](#syntax-check)
 - [Author Information](#author-information)
@@ -29,7 +31,7 @@ Purge WP Rocket cache when [Trellis](https://github.com/roots/trellis) deploys [
 
 - Trellis [411981f](https://github.com/roots/trellis/commit/411981fb4a7ef9be079f50fbf317db9fc290e91b) or later
 - Ansible v2.6 or later
-- WP Rocket
+- [WP Rocket](https://wp-rocket.me/)
 
 ## Installation
 
@@ -60,6 +62,14 @@ deploy_after:
 [Deploy](https://roots.io/trellis/docs/deploys/#example) as usual. No special action needed.
 
 ## FAQs
+
+### Does it trigger cache preload after purge?
+
+Yes if you enabled [cache preload](https://docs.wp-rocket.me/article/8-how-the-cache-is-preloaded).
+
+### Can I use it together with `trellis-purge-kinsta-cache-during-deploy`?
+
+Yes, this role is compatible with [trellis-purge-kinsta-cache-during-deploy](https://github.com/ItinerisLtd/trellis-purge-kinsta-cache-during-deploy).
 
 ### It looks awesome. Where can I find some more goodies like this?
 
