@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-
-namespace Itineris\TrellisPurgeWPRocketCacheDuringDeploy;
-
 /**
+ * {{ ansible_managed }}
  * @see https://github.com/ItinerisLtd/trellis-purge-wp-rocket-cache-during-deploy
  */
+namespace Itineris\TrellisPurgeWPRocketCacheDuringDeploy;
+
 function clear_cache_run_preload() {
     // Clear global cache.
     if (function_exists( 'rocket_clean_domain' )) {

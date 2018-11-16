@@ -1,7 +1,7 @@
 ---
 - name: Template wp-rocket-clean.php
   template:
-    src: wp-rocket-clean.php.j2
+    src: ../templates/wp-rocket-clean.php.j2
     dest: "{{ deploy_helper.shared_path }}/wp-rocket-clean.php"
 
 - name: Purge WP Rocket cache
