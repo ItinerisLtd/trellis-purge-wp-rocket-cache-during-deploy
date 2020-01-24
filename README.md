@@ -35,16 +35,16 @@ Purge [WP Rocket](https://wp-rocket.me/) cache when [Trellis](https://github.com
 
 ## Installation
 
-Add this role to `requirements.yml`:
+Add this role to `galaxy.yml`:
 ```yaml
-# requirements.yml
+# galaxy.yml
 - src: https://github.com/ItinerisLtd/trellis-purge-wp-rocket-cache-during-deploy
-  version: 0.1.0 # Check for latest version!
+  version: 0.1.1 # Check for latest version!
 ```
 
 Run the command:
 ```bash
-➜ ansible-galaxy install -r requirements.yml --force
+➜ ansible-galaxy install -r galaxy.yml --force
 ```
 
 ## Role Variables
